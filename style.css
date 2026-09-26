@@ -1,4 +1,13 @@
 body {    
+    --color-pink: #FFD1DC;
+    --color-sky: #B0E0E6;
+    --color-lavender: #E6E6FA;
+    --color-accent: #59667D;
+    --color-leaf: var(--color-accent);
+    --color-paper: #fff;
+    --color-ink: #28313D;
+    --color-muted: #596670;
+    --color-line: #CBD4DE;
     margin-top:77px;
     text-rendering: optimizeLegibility; 
     -webkit-font-smoothing: antialiased;    
@@ -51,11 +60,11 @@ h4 {
 }
 
 a {
-    color:#0070aa;
+    color:var(--color-leaf);
 }
 
 a:hover {
-    color:#0070aa;
+    color:var(--color-leaf);
 }
 
 p {
@@ -97,7 +106,7 @@ blockquote  {
     line-height:80px;
     margin:0px;
     padding:0px;
-    color:white;
+    color:var(--color-ink);
 }
 
 
@@ -178,17 +187,17 @@ nav #logo a {
 #navigation a:focus::before,
 #navigation a:hover::before
 {
-	color: #0070aa;
+    color: var(--color-leaf);
 	
 }
 
 #navigation a:hover,
 #navigation a:focus {
-	color: #0070aa;
+    color: var(--color-leaf);
 }
 
 #sections .current a {
-    color: #0070aa;    
+    color: var(--color-leaf);    
 }
 
 /* //NAVIGATION - Desktop*/
@@ -200,7 +209,7 @@ nav #logo a {
 /*##################################################################*/
 
 .cbp-spmenu {
-	background: #3c3f41;
+    background: var(--color-lavender);
 	position: fixed;
     width: 240px;
 	height: 100%;
@@ -214,12 +223,12 @@ nav #logo a {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight:700;
-	color: #2d2e30;
+    color: var(--color-ink);
 	font-size: 20px;
 	padding: 20px;
 	margin: 0;
 	font-weight: 300;
-	background: #3c3f41;
+    background: var(--color-lavender);
 }
 
 .cbp-spmenu a {
@@ -228,21 +237,21 @@ nav #logo a {
     text-transform: uppercase;
     font-weight:700;
 	display: block;
-	color: #fff;
+    color: var(--color-ink);
 	font-size: 15px;
-    border-bottom: 1px solid #434546;
+    border-bottom: 1px solid var(--color-line);
 	padding-left: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .cbp-spmenu a:hover {
-	background: #2d2e30;
+    background: var(--color-sky);
 }
 
 .cbp-spmenu a:active {
-	background: #2d2e30;
-	color: #8d9b9f;
+    background: var(--color-sky);
+    color: var(--color-ink);
 }
 
 .cbp-spmenu.cbp-spmenu-open {
@@ -269,7 +278,7 @@ nav #logo a {
 }
 
 .button_nav {
-	background-color:#ffffff;
+    background-color:var(--color-paper);
 	-webkit-border-top-left-radius:100px;
 	-moz-border-radius-topleft:100px;
 	border-top-left-radius:100px;
@@ -283,9 +292,9 @@ nav #logo a {
 	-moz-border-radius-bottomleft:100px;
 	border-bottom-left-radius:100px;
 	text-indent:0;
-	border:2px solid #0071aa;
+    border:2px solid var(--color-leaf);
 	display:inline-block;
-	color:#0071aa;
+    color:var(--color-leaf);
 	font-family:Arial;
 	font-size:14px;
 	font-weight:bold;
@@ -302,7 +311,7 @@ nav #logo a {
 }
 
 .button_nav:hover {
-	background-color:#f7f9fa;
+    background-color:#e9efdf;
 }
 
 .button_nav:active {
@@ -320,7 +329,7 @@ nav #logo a {
 #home {
     height:574px;
     width:100%;
-    background-color: #0070aa;
+    background-color: var(--color-lavender);
     background-image: url(../images/home-bg.jpg);
     background-position:center;
     background-repeat:no-repeat;
@@ -330,7 +339,7 @@ nav #logo a {
 }
 
 #home h1, #home blockquote {
-    color:white;
+    color:var(--color-ink);
 }
 #home blockquote {
     margin-top:165px;
@@ -343,7 +352,7 @@ nav #logo a {
 	font-family: 'Montserrat', sans-serif;
     font-weight:400;
 	font-size: 14px;
-	color: white;
+    color: var(--color-ink);
 	background: none;
 	cursor: pointer;
 	padding: 17px 35px;
@@ -403,8 +412,8 @@ nav #logo a {
 
 .btn-arrow {
     border-radius: 50px;
-	border: 2px solid #fff;
-	color: #fff;
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
 	overflow: hidden;
     -webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -412,7 +421,7 @@ nav #logo a {
 }
 
 .btn-arrow:active {
-	background: #0070aa;
+    background: var(--color-sky);
 	top: 2px;
 }
 
@@ -440,7 +449,7 @@ nav #logo a {
 }
 
 .btn-arrow:active:before {
-	color: #004a70;
+    color: var(--color-ink);
 }
 
 .btn-arrowb:hover span {
@@ -466,7 +475,7 @@ nav #logo a {
 /*##################################################################*/
 
 #about {
-    background-color:white;
+    background-color:#fff;
     display:block;
     position:relative;
     z-index:120;
@@ -477,7 +486,7 @@ nav #logo a {
 }
 
 #about h2, #about blockquote p, #about p {
-    color:#4c4c4c;
+    color:var(--color-ink);
 }
 
 #about blockquote p {
@@ -492,7 +501,7 @@ nav #logo a {
 
 #clients {
     width:100%;
-    background-color: white;
+    background-color:var(--color-lavender);
     background-image: url(../images/clients_bg.jpg);
     background-position:top;
     background-repeat:no-repeat;
@@ -500,14 +509,14 @@ nav #logo a {
 }
 
 #clients h3 {
-    color:#4c4c4c;
+    color:var(--color-ink);
     margin-bottom:80px;    
 }
 
 #clients .client_logo {
     border-style:solid;
     border-width:4px;
-    border-color: #d2d2d2;
+    border-color: var(--color-line);
     margin: 0 auto 30px auto;    
 }
 
@@ -524,7 +533,7 @@ nav #logo a {
 #services {
     padding-top: 110px;
     padding-bottom: 50px;
-    background-color:#0070aa;
+    background-color:var(--color-sky);
     background-image: none;
     background-position: center;
     background-repeat: no-repeat;
@@ -536,7 +545,7 @@ nav #logo a {
 }
 
 #services h2, #services p {
-    color:white;   
+    color:var(--color-ink);
 }    
 
 #service_boxes {
@@ -549,7 +558,7 @@ nav #logo a {
     text-align:left;
     width:250px;
     margin: 0 auto;
-    color:white;    
+    color:var(--color-ink);
 }
 
 #service_boxes ul li {
@@ -572,8 +581,8 @@ nav #logo a {
 }
 
 #service_boxes li:before, #service_boxes li:after {
-    color: white;
-     content: "\e096";
+    color: var(--color-accent);
+    padding-right:10px;
 }
 
 .service_box {
@@ -585,7 +594,7 @@ nav #logo a {
 	font-family: 'Montserrat', sans-serif;
     font-weight:400;
 	font-size: 14px;
-	color: white;
+    color: var(--color-ink);
 	background: none;
 	cursor: default;
 	padding: 17px 35px;
@@ -641,8 +650,8 @@ nav #logo a {
 
 .animbox-icon {
     border-radius: 0px;
-	border: 2px solid rgba(255, 255, 255, .5);
-	color: #fff;
+    border: 2px solid rgba(40, 49, 61, .35);
+    color: var(--color-ink);
 	overflow: hidden;
     -webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -911,7 +920,7 @@ nav #logo a {
 #team {
     padding-top: 110px;
     padding-bottom: 90px;
-    background-color:red;
+    background-color:var(--color-pink);
     background-image: url(../images/team_bg.jpg);
     background-position: center;
     background-repeat:repeat;
@@ -923,7 +932,7 @@ nav #logo a {
 }
 
 #team h2, #team h4, #team p {
-    color:white;   
+    color:var(--color-ink);
 }    
 
 #team p {
@@ -949,7 +958,7 @@ nav #logo a {
 }
 
 .border {
-	border: 2px dashed rgba(255, 255, 255, .5);
+    border: 2px dashed rgba(40, 49, 61, .35);
 }
 
 
@@ -966,7 +975,7 @@ nav #logo a {
     margin-top:2px;
     padding-top: 90px;
     padding-bottom: 50px;
-    background-color:white;
+    background-color:#fff;
     display:block;
     position:relative;
     z-index:120;
@@ -985,7 +994,7 @@ nav #logo a {
 	font-family: 'Montserrat', sans-serif;
     font-weight:400;
 	font-size: 14px;
-	color: blue;
+    color: var(--color-accent);
 	background: none;
 	cursor: pointer;
 	padding: 17px 35px;
@@ -1033,8 +1042,8 @@ nav #logo a {
 
 .btn-send {
     border-radius: 50px;
-	border: 2px solid #0070aa;
-	color: #0070aa;
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
 	overflow: hidden;
     -webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -1042,7 +1051,7 @@ nav #logo a {
 }
 
 .btn-send:active {
-	background: #0070aa;
+    background: var(--color-sky);
 	top: 2px;
 }
 
@@ -1070,7 +1079,7 @@ nav #logo a {
 }
 
 .btn-send:active:before {
-	color: #004a70;
+    color: var(--color-ink);
 }
 
 .btn-sendb:hover span {
@@ -1105,7 +1114,7 @@ nav #logo a {
     margin-bottom: 20px;
     padding: 0 20px;
     border-style: solid;
-    border-color:#d2d2d2;
+    border-color:var(--color-line);
     border-radius: 2px;
     box-shadow: none;
     font-family: 'Lato', sans-serif;
@@ -1159,7 +1168,7 @@ nav #logo a {
 }
 
 .contact_details span{
-    color: #d2d2d2;
+    color: var(--color-muted);
     font-size:30px;    
 }
 .contact_details p{
@@ -1193,7 +1202,7 @@ nav #logo a {
 
 .social_icons li a span{
     font-size: 15px;
-    color:#0070aa;
+    color:var(--color-accent);
 }
 
 .social_icons li a:hover {
@@ -1205,12 +1214,12 @@ nav #logo a {
 /*##################################################################*/
 
 #footer {
-    background-color:#3e3e3e;
+    background-color:var(--color-lavender);
     padding-top:38px;
     padding-bottom:38px;
 }
 #footer p {
-    color:#d6d6d6;
+    color:var(--color-ink);
     margin:0px;
     padding:0px;
 }
