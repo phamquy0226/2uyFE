@@ -731,7 +731,7 @@ nav #logo a {
 	float: left;
 	padding: 7px;
 	width: 33%;
-	opacity: 0;
+    opacity: 1;
 }
 
 .grid li.shown,
@@ -778,6 +778,48 @@ nav #logo a {
 
 .grid li img:hover {
     opacity:0.2    
+}
+
+#grid.grid-enhanced {
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:14px;
+    height:auto !important;
+    perspective-origin:initial !important;
+}
+
+#grid.grid-enhanced > li {
+    float:none;
+    width:auto;
+    padding:0;
+    opacity:0;
+    transform:translateY(24px);
+    transition:opacity .55s ease, transform .55s ease;
+}
+
+#grid.grid-enhanced > li.is-visible {
+    opacity:1;
+    transform:translateY(0);
+}
+
+@media (max-width: 767px) {
+    #grid.grid-enhanced {
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 420px) {
+    #grid.grid-enhanced {
+        grid-template-columns:1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #grid.grid-enhanced > li {
+        opacity:1;
+        transform:none;
+        transition:none;
+    }
 }
 
 
@@ -853,6 +895,10 @@ nav #logo a {
     -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
+
+body.modal-open {
+    overflow:hidden;
+}
  
 .md-show ~ .md-overlay {
     opacity: 1;
@@ -873,6 +919,28 @@ nav #logo a {
 .md-show.md-effect-1 ~ .md-overlay {
 	background: white;
 } 
+
+#work3 .flex-direction-nav {
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    height:auto;
+    margin-top:16px;
+}
+
+#work3 .flex-direction-nav li a {
+    position:static;
+    display:inline-flex;
+    align-items:center;
+    width:auto;
+    height:auto;
+    padding:8px 14px;
+    float:none;
+    background:none;
+    color:var(--color-accent);
+    text-indent:0;
+    text-decoration:none;
+}
 
 .md-effect-1 .md-content h3,
 .md-effect-1 .md-content {
