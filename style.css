@@ -387,7 +387,8 @@ nav #logo a {
 }
 
 .icon-arrow:before {
-	content: "\e096";
+    content: "\2193";
+    font-family: sans-serif;
 }
 
 .btn-arrow {
