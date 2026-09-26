@@ -391,6 +391,16 @@ nav #logo a {
     font-family: sans-serif;
 }
 
+.icon-list:before {
+    content: "\2630";
+    font-family: sans-serif;
+}
+
+.icon-cross:before {
+    content: "\00D7";
+    font-family: sans-serif;
+}
+
 .btn-arrow {
     border-radius: 50px;
 	border: 2px solid #fff;
@@ -563,7 +573,7 @@ nav #logo a {
 
 #service_boxes li:before, #service_boxes li:after {
     color: white;
-    padding-right:10px;        
+     content: "\e096";
 }
 
 .service_box {
